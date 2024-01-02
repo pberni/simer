@@ -1,165 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>SIMER</title>
-
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="icon" href="./img/fav.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMER</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Img/fav.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">simer</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Contacto</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<section id="container">
+
+    <header class="header">
+        <a href="Index.html" class="logo">simer</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="Index.html" style="--i:0;">Inicio</a>
+            <a href="#card-container" style="--i:1;">Nuestros Servicios</a>
+            <a href="#pie-pagina" style="--i:2;">Contáctos</a>
+        </nav>
+    </header>
+
+    
+    <div class="titulo">
+        <h1>Agencia de turismo receptivo</h1>
     </div>
-  </nav>
+    
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">SIMER</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Agencia de turismo receptivo</h5>
+</section>
+
+<section id="card-container">
+
+    <div class="card">
+        <img src="Img/cataratas.png" alt="">
+        <div class="card-content">
+            <h3>Cataratas</h3>
+            <p>
+                Visitar el Parque Nacional Iguazú y disfrutar de una de las 7 maravillas 
+                del mundo es una parada obligatoria para viajeros locales e internacionales. 
+                Este destino que recibe  actualmente más de 1 millón de visitantes por año 
+                contiene todos los ingredientes para un viaje único, lleno de excursiones y 
+                actividades que lo convertirán en una experiencia imposible de olvidar.
+                <br>
+                <br>
+                Horario: 8:00hs a 18:00hs.
+                <br>
+                <br>
+                Costo de entrada: 2.500 pesos para Argentinos / Residentes y 10.000 pesos para extranjeros.
+            </p>
+            <a href="#" class="card-button">Ver más</a>
         </div>
-
-
-
-      </div>
     </div>
-    <div class="parallax"><img src="img/f01.png" alt="Unsplashed background img 1"></div>
-  </div>
 
+    <div class="card">
+        <img src="Img/ciudad del este.jpg" alt="">
+        <div class="card-content">
+            <h3>Ciudad del Este</h3>
+            <p>
+                Ciudad del Este es ideal para aquel que busca dinamismo 
+                y diversidad en sus viajes. Famosa por sus zonas comerciales, 
+                esta ciudad paraguaya también ofrece una amplia gama de actividades 
+                en destino que te mantendrán atrapado.
+                <br>
+                <br>
+                Horario: 7:00hs a 18:00hs.
+            </p>
+            <a href="#" class="card-button">Ver más</a>
+        </div>
+    </div>
 
-  <div class="container">
-    <div class="section">
+    <div class="card">
+        <img src="Img/minas de wanda.jpg" alt="">
+        <div class="card-content">
+            <h3>Minas de Wanda</h3>
+            <p>
+                Las Minas de Wanda, es uno de los atractivos y lugares más visitados 
+                y conocidos de la provincia de Misiones. Probablemente hayas escuchado 
+                hablar de las Minas de Wanda ya que es una de las excursiones más elegidas 
+                para hacer desde Puerto Iguazú, ciudad que se encuentra a 20 kilómetros de 
+                las Cataratas del Iguazú.
+                <br>
+                <br>
+                Horario: 7:00hs a 18:00hs.
+                <br>
+                <br>
+                Costo de entrada: 12.000 pesos por persona.
+            </p>
+            <a href="#" class="card-button">Ver más</a>
+        </div>
+    </div>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center teal-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Viajes a Cataratas</h5>
+</section>
 
-            <p class="light">Lo llevamos sano y salvo.</p>
-          </div>
+<section id="viaje-seguro">
+    <h3>Viaje seguro con simer</h3>
+</section>
+
+<footer id="pie-pagina">
+
+    <div class="grupo-1">
+
+        <div class="box">
+            <figure>
+                <a href="Index.html">
+                    <img src="img/fav.png" alt="simer">
+                </a>
+            </figure>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center teal-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Minas de wanda</h5>
-
-            <p class="light">Lo llevamos hasta las minas de wanda, a 50km de la ciudad de Puerto Iguazú.</p>
-          </div>
+        <div class="box">
+            <h2>Una Empresa Familiar</h2>
+            <p>Somos una familia que esta creciendo poco a poco para brindarte el mejor servicio.</p>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center teal-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Viaje a Paraguay</h5>
-
-            <p class="light">Lo llevamos a recorrer el paraiso de los precios bajos, todos sin impuestos, puede comprar al mismo precio como si estuviera en miami.</p>
-          </div>
+        <div class="box">
+            <h2>Contáctos</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
         </div>
-      </div>
 
     </div>
-  </div>
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">la ultima tecnología en vehículos</h5>
-        </div>
-      </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>BerniDesign</b> - Todos los Derechos Reservados.</small>
     </div>
-    <div class="parallax"><img src="img/f02.png" alt="Unsplashed background img 2"></div>
-  </div>
 
-  <div class="container">
-    <div class="section">
+</footer>
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>textos</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Viaje Seguro con SIMER</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="img/f03.png" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Una empresa familiar</h5>
-          <p class="grey-text text-lighten-4">Somos una familiar que esta creciendo pococ a poco, para darte el mejor servicio.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
- 
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contacto</h5>
-          <ul>
-            <li><a class="white-text" href="https://instagram.com/transfersimer?igshid=NzZlODBkYWE4Ng==">instagram</a></li>
-            <li><a class="white-text" href="#!">facebook</a></li>
-            <li><a class="white-text" href="#!">simer</a></li>
- 
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="https://bernidesign3d.web.app">bernidesign</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>
